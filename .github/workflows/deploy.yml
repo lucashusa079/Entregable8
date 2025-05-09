@@ -28,4 +28,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./wwwroot
+          publish_dir: ./output/wwwroot
