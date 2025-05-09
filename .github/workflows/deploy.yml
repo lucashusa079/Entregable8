@@ -20,6 +20,9 @@ jobs:
 
       - name: Publish project
         run: dotnet publish -c Release -o release
+        
+      - name: Publish
+        run: dotnet publish --configuration Release --output ./output
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
